@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone') {
+            steps {
+                git 'https://github.com/your-username/student-app.git'
+            }
+        }
+
+        stage('Install') {
+            steps {
+                bat 'pip install -r requirements.txt'
+            }
+        }
+
+        stage('Run') {
+            steps {
+                bat 'python app.py'
+            }
+        }
+    }
+}
