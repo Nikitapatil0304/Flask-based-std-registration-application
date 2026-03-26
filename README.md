@@ -15,13 +15,9 @@ The application allows users to:
 
 ## 🏗️ Architecture
 
-```
-User → Web Browser → Flask App → MySQL Database
-                          ↓
-                      Jenkins CI/CD
-                          ↓
-                      Deployment Server
-```
+![Architecture](https://github.com/user-attachments/assets/f54ae136-1c82-4402-ad49-8149ead4e69a)
+
+---
 
 ---
 
